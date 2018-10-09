@@ -1,0 +1,89 @@
+$WAVE4TIMED
+$RESOLUTION 1000
+I 1 "a#29#std_logic_vector(15 downto 0)1 ricd15 0 e#9#std_logicc9 UX01ZWLH-"
+I 2 "e#9#std_logicc9 UX01ZWLH-"
+$BUS S 65 1 16 pin_introdus
+$SC 1-61/4
+I 3 "e#3#bitc2 01"
+$S +5 3 greater
+$S +4 3 iesire_poarta_si_afis
+$S +4 2 clock_div
+$S +4 3 finish_pin
+$S +4 3 clear
+$S +4 3 pl_pin_negat
+$S +4 3 afis_err_pin
+I 4 "a#28#std_logic_vector(2 downto 0)1 ricd2 0 e#9#std_logicc9 UX01ZWLH-"
+$BUS S +16 4 3 pozitie_card1
+$SC 94-+8/4
+$S +5 3 mem_pin
+$S +4 3 out_gate_si_f
+$S +4 3 corect
+$S +4 3 afisare_enable_err
+$S +4 3 card_corect
+$S +4 3 BIG
+$S +4 3 finish_card
+$S +4 3 int_sold
+$S +4 3 pin_corect
+$BUS S +16 4 3 pozitie_card
+$SC 143-+8/4
+$S +5 3 afis_err
+$S +4 3 pl_pin
+$S +4 3 iesire_poarta_si_afis_p
+$S +4 3 less
+$S +4 3 iesire_bistabil_memorare
+$OUT +4 3 ret
+$BUS S +68 1 16 S_pin
+$SC 180-+60/4
+$BUS S +69 1 16 cnt_cod
+$SC 245-+60/4
+$OUT +5 3 dep
+$S +4 3 suma_clr
+I 5 "a#29#std_logic_vector(12 downto 0)1 ricd12 0 e#9#std_logicc9 UX01ZWLH-"
+$BUS S +56 5 13 out_memorare_cont
+$SC 318-+48/4
+$BUS S +57 5 13 0 13 ""
+$SC 371-+48/4
+$S +5 3 start_b_PIN_inv
+$S +4 3 write_enable_PIN
+I 6 "a#29#std_logic_vector(13 downto 0)1 ricd13 0 e#9#std_logicc9 UX01ZWLH-"
+$BUS S +60 6 14 sumaConv
+$SC 432-+52/4
+$S +5 3 depunere_bani
+$S +4 3 write_enable_conturi
+$BUS S +68 1 16 s_afisare_int_sold
+$SC 497-+60/4
+$S +5 3 errsuma
+$S +4 3 retragere_bani
+$BUS S +68 1 16 PIN_modificat
+$SC 570-+60/4
+$S +5 3 iesire_poarta_si_sch_pin
+$S +4 3 reset_reg
+$BUS S +68 1 16 iesire_RAM_PIN
+$SC 643-+60/4
+$S +5 3 enb_afis_sold
+$S +4 3 semn_verificare
+$S +4 3 switch_pin
+I 7 "a#22#BIT_VECTOR(1 downto 0)1 ricd1 0 e#3#bitc2 01"
+$BUS IN +12 7 2 sel_opt
+$SC +-8 +4
+$OUT +5 2 anod1b
+$OUT +4 2 4 1 "3"
+I 8 "a#28#std_logic_vector(3 downto 0)1 ricd3 0 e#9#std_logicc9 UX01ZWLH-"
+$BUS IN +20 8 4 sw_b
+$SC 737-+12/4
+$OUT +5 2 anod2b
+$IN +4 3 start_b_PIN
+I 9 "a#28#std_logic_vector(6 downto 0)1 ricd6 0 e#9#std_logicc9 UX01ZWLH-"
+$BUS OUT +32 9 7 catodb
+$SC 762-+24/4
+$OUT +5 2 anod4b
+$OUT +4 3 card
+$IN +4 2 clk_placa
+$OUT +4 3 pin
+$OUT +4 3 sw_pin
+$IN +4 2 clk_b
+$BUS IN +12 7 2 sel_b
+$SC +-8 +4
+$OUT +5 3 sold
+$IN +4 3 start_b
+$ENDWAVE

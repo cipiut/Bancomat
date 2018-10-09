@@ -1,0 +1,286 @@
+SCHM0102
+
+HEADER
+{
+ FREEID 27
+ VARIABLES
+ {
+  #ARCHITECTURE="arh_verificare_suma"
+  #BLOCKTABLE_FILE="#HDL2DIAGRAM.bde"
+  #ENTITY="verificare_suma"
+  #LANGUAGE="VHDL"
+  AUTHOR="Cata"
+  COMPANY="asd"
+  CREATIONDATE="15-May-17"
+  SOURCE="C:\\Users\\Catalin\\Desktop\\bancomat_PSN\\bancomat_PSN\\bancomat\\bancomat\\src\\verificare_suma.vhd"
+ }
+}
+
+PAGE ""
+{
+ PAGEHEADER
+ {
+  PAGESIZE (1752,2096)
+  MARGINS (200,200,200,200)
+  RECT (0,0,0,0)
+ }
+ 
+ BODY
+ {
+  VHDLDESIGNUNITHDR  1, 0, 0
+  {
+   LABEL "Design Unit Header"
+   TEXT 
+"library ieee ;\n"+
+"use ieee.std_logic_1164.all;"
+   RECT (220,260,620,439)
+   MARGINS (20,20)
+   MULTILINE
+   SYNTAXCOLORED
+   SHOWLABEL
+   SHOWTEXT
+   CORNER 10
+  }
+  SIGNALASSIGN  2, 0, 0
+  {
+   LABEL "Statement_1"
+   TEXT 
+"process(enb_retragere,enb_depunere,terminaresuma,suma_introd_sw)\n"+
+"\tbegin \n"+
+"\t\tif(terminaresuma='1' and suma_introd_sw /= \"0000000000000000\")then\n"+
+"\t\t  if(suma_introdusa_conversie < T_1000 or suma_introdusa_conversie = T_1000 ) then\n"+
+"                if(enb_retragere='1')then\n"+
+"                    if (suma_introd_sw(3 downto 0)=\"0000\")then \n"+
+"                            if(suma_introdusa_conversie < sum_cont)  then\n"+
+"                                t<='1';\n"+
+"                            else\n"+
+"                                t<='0';\n"+
+"                            end if; \n"+
+"                     else \n"+
+"                         \tt<='0';\n"+
+"                     end if;\t\t\n"+
+"                elsif(enb_depunere='1')then\n"+
+"                    if(suma_introd_sw(3 downto 0)=\"0000\") then\n"+
+"                        t<='1';\n"+
+"                    else\n"+
+"                        t<='0';\n"+
+"                    end if;\n"+
+"                end if;\n"+
+"\t\t\telse \n"+
+"\t\t\t     t<='0';\n"+
+"\t\t\tend if;\n"+
+"\t\telse \n"+
+"\t\t\tt<='0';\n"+
+"\t\tend if;\n"+
+"\tend process;"
+   RECT (220,512,720,1476)
+   MARGINS (20,20)
+   MULTILINE
+   SYNTAXCOLORED
+   SHOWLABEL
+   SHOWTEXT
+   CORNER 10
+  }
+  INSTANCE  3, 0, 0
+  {
+   VARIABLES
+   {
+    #COMPONENT="Output"
+    #LIBRARY="#terminals"
+    #REFERENCE="verif_ok"
+    #SYMBOL="Output"
+    #VHDL_TYPE="bit"
+   }
+   COORD (1280,240)
+   VERTEXES ( (2,19) )
+  }
+  INSTANCE  4, 0, 0
+  {
+   VARIABLES
+   {
+    #COMPONENT="Input"
+    #LIBRARY="#terminals"
+    #REFERENCE="enb_depunere"
+    #SYMBOL="Input"
+    #VHDL_TYPE="BIT"
+   }
+   COORD (1280,300)
+  }
+  INSTANCE  5, 0, 0
+  {
+   VARIABLES
+   {
+    #COMPONENT="Input"
+    #LIBRARY="#terminals"
+    #REFERENCE="enb_retragere"
+    #SYMBOL="Input"
+    #VHDL_TYPE="BIT"
+   }
+   COORD (1280,360)
+  }
+  INSTANCE  6, 0, 0
+  {
+   VARIABLES
+   {
+    #COMPONENT="BusInput"
+    #LIBRARY="#terminals"
+    #REFERENCE="sum_cont(13:0)"
+    #SYMBOL="BusInput"
+    #VHDL_TYPE="std_logic_vector"
+   }
+   COORD (1280,420)
+  }
+  INSTANCE  7, 0, 0
+  {
+   VARIABLES
+   {
+    #COMPONENT="BusInput"
+    #LIBRARY="#terminals"
+    #REFERENCE="suma_introd_sw(15:0)"
+    #SYMBOL="BusInput"
+    #VHDL_TYPE="std_logic_vector"
+   }
+   COORD (1280,480)
+  }
+  INSTANCE  8, 0, 0
+  {
+   VARIABLES
+   {
+    #COMPONENT="BusInput"
+    #LIBRARY="#terminals"
+    #REFERENCE="suma_introdusa_conversie(13:0)"
+    #SYMBOL="BusInput"
+    #VHDL_TYPE="std_logic_vector"
+   }
+   COORD (1280,540)
+  }
+  INSTANCE  9, 0, 0
+  {
+   VARIABLES
+   {
+    #COMPONENT="Input"
+    #LIBRARY="#terminals"
+    #REFERENCE="terminaresuma"
+    #SYMBOL="Input"
+    #VHDL_TYPE="bit"
+   }
+   COORD (1280,600)
+  }
+  TEXT  10, 0, 0
+  {
+   TEXT "$#REFERENCE"
+   RECT (1332,240,1332,240)
+   ALIGN 4
+   PARENT 3
+  }
+  TEXT  11, 0, 0
+  {
+   TEXT "$#REFERENCE"
+   RECT (1228,300,1228,300)
+   ALIGN 6
+   PARENT 4
+  }
+  TEXT  12, 0, 0
+  {
+   TEXT "$#REFERENCE"
+   RECT (1228,360,1228,360)
+   ALIGN 6
+   PARENT 5
+  }
+  TEXT  13, 0, 0
+  {
+   TEXT "$#REFERENCE"
+   RECT (1228,420,1228,420)
+   ALIGN 6
+   PARENT 6
+  }
+  TEXT  14, 0, 0
+  {
+   TEXT "$#REFERENCE"
+   RECT (1228,480,1228,480)
+   ALIGN 6
+   PARENT 7
+  }
+  TEXT  15, 0, 0
+  {
+   TEXT "$#REFERENCE"
+   RECT (1228,540,1228,540)
+   ALIGN 6
+   PARENT 8
+  }
+  TEXT  16, 0, 0
+  {
+   TEXT "$#REFERENCE"
+   RECT (1228,600,1228,600)
+   ALIGN 6
+   PARENT 9
+  }
+  NET BUS  17, 0, 0
+  {
+   VARIABLES
+   {
+    #INITIAL_VALUE="\"00001111101000\""
+    #NAME="T_1000(13:0)"
+    #VHDL_TYPE="std_logic_vector"
+   }
+  }
+  NET WIRE  18, 0, 0
+  {
+   VARIABLES
+   {
+    #NAME="t"
+    #VHDL_TYPE="bit"
+   }
+  }
+  VTX  19, 0, 0
+  {
+   COORD (1280,240)
+  }
+  VTX  20, 0, 0
+  {
+   COORD (1260,240)
+  }
+  WIRE  21, 0, 0
+  {
+   NET 18
+   VTX 19, 20
+   VARIABLES
+   {
+    #NAMED="1"
+   }
+  }
+  TEXT  22, 0, 1
+  {
+   TEXT "$#NAME"
+   RECT (1270,240,1270,240)
+   ALIGN 9
+   PARENT 21
+  }
+  VTX  23, 0, 0
+  {
+   COORD (1381,220)
+  }
+  VTX  24, 0, 0
+  {
+   COORD (1481,220)
+  }
+  BUS  25, 0, 0
+  {
+   NET 17
+   VTX 23, 24
+   VARIABLES
+   {
+    #NAMED="1"
+   }
+  }
+  TEXT  26, 0, 1
+  {
+   TEXT "$#NAME"
+   RECT (1431,220,1431,220)
+   ALIGN 9
+   PARENT 25
+  }
+ }
+ 
+}
+

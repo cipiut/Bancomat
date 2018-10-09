@@ -1,0 +1,37 @@
+"D:\Facultate\bancomat_PSN\bancomat_PSN\bancomat\bancomat\src\citire_card.vhd" bancomat 1 0 0
+"D:\Facultate\bancomat_PSN\bancomat_PSN\bancomat\bancomat\src\dmux_4_16.vhd" bancomat 1 0 0
+"D:\Facultate\bancomat_PSN\bancomat_PSN\bancomat\bancomat\src\registru_16bit.vhd" bancomat 1 0 0
+"D:\Facultate\bancomat_PSN\bancomat_PSN\bancomat\bancomat\src\poarta_si.vhd" bancomat 1 0 0
+"D:\Facultate\bancomat_PSN\bancomat_PSN\bancomat\bancomat\src\inversor.vhd" bancomat 1 0 0
+"D:\Facultate\bancomat_PSN\bancomat_PSN\bancomat\bancomat\src\bistabil_D.vhd" bancomat 1 0 0
+"D:\Facultate\bancomat_PSN\bancomat_PSN\bancomat\bancomat\src\numarator_adrese.vhd" bancomat 1 0 0
+"D:\Facultate\bancomat_PSN\bancomat_PSN\bancomat\bancomat\src\memorie_rom.vhd" bancomat 1 0 0
+"D:\Facultate\bancomat_PSN\bancomat_PSN\bancomat\bancomat\src\comparator.vhd" bancomat 1 0 0
+"D:\Facultate\bancomat_PSN\bancomat_PSN\bancomat\bancomat\src\verificare_card.vhd" bancomat 1 0 0
+"D:\Facultate\bancomat_PSN\bancomat_PSN\bancomat\bancomat\src\OR_gate.vhd" bancomat 1 0 0
+"D:\Facultate\bancomat_PSN\bancomat_PSN\bancomat\bancomat\src\bancomat.vhd" bancomat 1 0 0
+"D:\Facultate\bancomat_PSN\bancomat_PSN\bancomat\bancomat\src\divizor_frecventa.vhd" bancomat 1 0 0
+"D:\Facultate\bancomat_PSN\bancomat_PSN\bancomat\bancomat\src\citire_pin.vhd" bancomat 1 0 0
+"D:\Facultate\bancomat_PSN\bancomat_PSN\bancomat\bancomat\src\verificare_PIN.vhd" bancomat 1 0 0
+"D:\Facultate\bancomat_PSN\bancomat_PSN\bancomat\bancomat\src\registru.vhd" bancomat 1 0 0
+"D:\Facultate\bancomat_PSN\bancomat_PSN\bancomat\bancomat\src\memorie_RAM.vhd" bancomat 1 0 0
+"D:\Facultate\bancomat_PSN\bancomat_PSN\bancomat\bancomat\src\poarta _S_fara_inv.vhd" bancomat 1 0 0
+"D:\Facultate\bancomat_PSN\bancomat_PSN\bancomat\bancomat\src\registru1.vhd" bancomat 1 0 0
+"D:\Facultate\bancomat_PSN\bancomat_PSN\bancomat\bancomat\src\afisare.vhd" bancomat 1 0 0
+"D:\Facultate\bancomat_PSN\bancomat_PSN\bancomat\bancomat\src\decodicator_7seg.vhd" bancomat 1 0 0
+"D:\Facultate\bancomat_PSN\bancomat_PSN\bancomat\bancomat\src\memorie_ram_conturi.vhd" bancomat 1 0 0
+"D:\Facultate\bancomat_PSN\bancomat_PSN\bancomat\bancomat\src\demux_optiuni.vhd" bancomat 1 0 0
+"D:\Facultate\bancomat_PSN\bancomat_PSN\bancomat\bancomat\src\citire_pin_schimbare.vhd" bancomat 1 0 0
+"D:\Facultate\bancomat_PSN\bancomat_PSN\bancomat\bancomat\src\interogare_sold .vhd" bancomat 1 0 0
+"D:\Facultate\bancomat_PSN\bancomat_PSN\bancomat\bancomat\src\memorie_ram_bancnote.vhd" bancomat 1 0 0
+"D:\Facultate\bancomat_PSN\bancomat_PSN\bancomat\bancomat\src\numarator_bancnote_2biti.vhd" bancomat 1 0 0
+"D:\Facultate\bancomat_PSN\bancomat_PSN\bancomat\bancomat\src\comparator_special_bancnote.vhd" bancomat 1 0 0
+"D:\Facultate\bancomat_PSN\bancomat_PSN\bancomat\bancomat\src\operatie-SCADERE.vhd" bancomat 1 0 0
+"D:\Facultate\bancomat_PSN\bancomat_PSN\bancomat\bancomat\src\MUX_14bit.vhd" bancomat 1 0 0
+"D:\Facultate\bancomat_PSN\bancomat_PSN\bancomat\bancomat\src\citire_suma_ret_dep.vhd" bancomat 1 0 0
+"D:\Facultate\bancomat_PSN\bancomat_PSN\bancomat\bancomat\src\conersie_suma_ret_dep.vhd" bancomat 1 0 0
+"D:\Facultate\bancomat_PSN\bancomat_PSN\bancomat\bancomat\src\verificare_suma.vhd" bancomat 1 0 0
+"D:\Facultate\bancomat_PSN\bancomat_PSN\bancomat\bancomat\src\component_cit_verif_suma.vhd" bancomat 1 0 0
+"D:\Facultate\bancomat_PSN\bancomat_PSN\bancomat\bancomat\src\magazie_bani.vhd" bancomat 1 0 0
+"D:\Facultate\bancomat_PSN\bancomat_PSN\bancomat\bancomat\src\memorie_ram2.vhd" bancomat 1 0 0
+. . 0 0 0

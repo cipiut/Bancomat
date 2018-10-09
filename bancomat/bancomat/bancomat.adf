@@ -1,0 +1,131 @@
+[Project]
+Current Flow=Multivendor
+VCS=0
+version=1
+Current Config=compile
+
+[Configurations]
+compile=bancomat
+
+[Library]
+bancomat=.\bancomat.lib
+
+[$LibMap$]
+bancomat=.
+Active_lib=
+
+[Settings]
+FLOW_TYPE=HDL
+LANGUAGE=VHDL
+REFRESH_FLOW=1
+SYNTH_TOOL=<none>
+IMPL_TOOL=<none>
+FAMILY=
+FLOWTOOLS=ONLY_IMPL
+CSYNTH_TOOL=<none>
+Celoxica=0
+UseCeloxica=0
+PHYSSYNTH_TOOL=<none>
+PHYSSYNTH_STATUS=NONE
+
+[IMPLEMENTATION]
+UCF=
+
+[HierarchyViewer]
+SortInfo=u
+HierarchyInformation=bancomat|arh_bancomat|0   
+ShowHide=ShowTopLevel
+Selected=
+
+[Files]
+/citire_card.vhd=-1
+/dmux_4_16.vhd=-1
+/registru_16bit.vhd=-1
+/poarta_si.vhd=-1
+/inversor.vhd=-1
+/bistabil_D.vhd=-1
+/numarator_adrese.vhd=-1
+/memorie_rom.vhd=-1
+/comparator.vhd=-1
+/verificare_card.vhd=-1
+/OR_gate.vhd=-1
+/bancomat.vhd=-1
+/divizor_frecventa.vhd=-1
+/citire_pin.vhd=-1
+/verificare_PIN.vhd=-1
+/registru.vhd=-1
+/memorie_RAM.vhd=-1
+/poarta _S_fara_inv.vhd=-1
+/registru1.vhd=-1
+/afisare.vhd=-1
+/decodicator_7seg.vhd=-1
+/memorie_ram_conturi.vhd=-1
+/demux_optiuni.vhd=-1
+/citire_pin_schimbare.vhd=-1
+/interogare_sold .vhd=-1
+/memorie_ram_bancnote.vhd=-1
+/numarator_bancnote_2biti.vhd=-1
+/comparator_special_bancnote.vhd=-1
+/operatie-SCADERE.vhd=-1
+/MUX_14bit.vhd=-1
+/citire_suma_ret_dep.vhd=-1
+/conersie_suma_ret_dep.vhd=-1
+/verificare_suma.vhd=-1
+/component_cit_verif_suma.vhd=-1
+/magazie_bani.vhd=-1
+/memorie_ram2.vhd=-1
+/bancomat.bde=-1
+/verificare_card.bde=-1
+/magazie.bde=-1
+/citire.bde=-1
+/E7seg.bde=-1
+/interogare_sold.bde=-1
+/comp_cit_verif.bde=-1
+/verificare_suma.bde=-1
+
+[Files.Data]
+.\src\citire_card.vhd=VHDL Source Code
+.\src\dmux_4_16.vhd=VHDL Source Code
+.\src\registru_16bit.vhd=VHDL Source Code
+.\src\poarta_si.vhd=VHDL Source Code
+.\src\inversor.vhd=VHDL Source Code
+.\src\bistabil_D.vhd=VHDL Source Code
+.\src\numarator_adrese.vhd=VHDL Source Code
+.\src\memorie_rom.vhd=VHDL Source Code
+.\src\comparator.vhd=VHDL Source Code
+.\src\verificare_card.vhd=VHDL Source Code
+.\src\OR_gate.vhd=VHDL Source Code
+.\src\bancomat.vhd=VHDL Source Code
+.\src\divizor_frecventa.vhd=VHDL Source Code
+.\src\citire_pin.vhd=VHDL Source Code
+.\src\verificare_PIN.vhd=VHDL Source Code
+.\src\registru.vhd=VHDL Source Code
+.\src\memorie_RAM.vhd=VHDL Source Code
+.\src\poarta _S_fara_inv.vhd=VHDL Source Code
+.\src\registru1.vhd=VHDL Source Code
+.\src\afisare.vhd=VHDL Source Code
+.\src\decodicator_7seg.vhd=VHDL Source Code
+.\src\memorie_ram_conturi.vhd=VHDL Source Code
+.\src\demux_optiuni.vhd=VHDL Source Code
+.\src\citire_pin_schimbare.vhd=VHDL Source Code
+.\src\interogare_sold .vhd=VHDL Source Code
+.\src\memorie_ram_bancnote.vhd=VHDL Source Code
+.\src\numarator_bancnote_2biti.vhd=VHDL Source Code
+.\src\comparator_special_bancnote.vhd=VHDL Source Code
+.\src\operatie-SCADERE.vhd=VHDL Source Code
+.\src\MUX_14bit.vhd=VHDL Source Code
+.\src\citire_suma_ret_dep.vhd=VHDL Source Code
+.\src\conersie_suma_ret_dep.vhd=VHDL Source Code
+.\src\verificare_suma.vhd=VHDL Source Code
+.\src\component_cit_verif_suma.vhd=VHDL Source Code
+.\src\magazie_bani.vhd=VHDL Source Code
+.\src\memorie_ram2.vhd=VHDL Source Code
+.\src\bancomat.bde=Block Diagram
+.\src\verificare_card.bde=Block Diagram
+.\src\magazie.bde=Block Diagram
+.\src\citire.bde=Block Diagram
+.\src\E7seg.bde=Block Diagram
+.\src\interogare_sold.bde=Block Diagram
+.\src\comp_cit_verif.bde=Block Diagram
+.\src\verificare_suma.bde=Block Diagram
+

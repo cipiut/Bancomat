@@ -1,0 +1,103 @@
+$WAVE4TIMED
+$RESOLUTION 1000
+I 1 "e#3#bitc2 01"
+$IN 1 1 start_b
+I 2 "a#28#std_logic_vector(3 downto 0)1 ricd3 0 e#9#std_logicc9 UX01ZWLH-"
+I 3 "e#9#std_logicc9 UX01ZWLH-"
+$BUS IN 21 2 4 sw_b
+$SC 5-17/4
+$IN +5 3 clk_b
+$IN +4 3 clk_placa
+I 4 "a#22#BIT_VECTOR(1 downto 0)1 ricd1 0 e#3#bitc2 01"
+$BUS IN 38 4 2 sel_b
+$SC 30 +4
+$OUT +5 1 card_corect
+I 5 "a#29#std_logic_vector(15 downto 0)1 ricd15 0 e#9#std_logicc9 UX01ZWLH-"
+$BUS S +68 5 16 cnt_cod
+$SC 43-+60/4
+$S +5 1 finish_card
+$S +4 1 BIG
+I 6 "a#28#std_logic_vector(2 downto 0)1 ricd2 0 e#9#std_logicc9 UX01ZWLH-"
+$BUS S +16 6 3 pozitie_card
+$SC 116-+8/4
+$S +5 3 clock_div
+$ENDTIME 100000
+$WAVES 39
+=0 T 0
+=1 D 0 2
+=2 D 0 3
+$VALUES
+V 3
+0
+1
+0
+$END
+$WAVES 1 30 +4 +74 +4
+*0
+$VALUES
+V 1
+0
+$END
+$WAVES 43-+60/4 +13-+8/4 +5
+*0
+$VALUES
+V 1
+U
+$END
+$WAVES 5-+8/4 +9
+*0
+$VALUES
+V 1
+0
+$END
+$WAVES 17 +9
+*0
+$VALUES
+V 1
+1
+$END
+$ENDTIME 200000
+$WAVES +0
+=3 D 100k 1
+$VALUES
+V 1
+0
+$END
+$ENDTIME 300000
+$ENDTIME 400000
+$ENDTIME 500000
+$WAVES +0
+=4 D 400k 1
+$VALUES
+V 1
+1
+$END
+$ENDTIME 600000
+$WAVES +0
+=5 D 500k 1
+$VALUES
+V 1
+0
+$END
+$ENDTIME 700000
+$WAVES +0
+=6 D 600k 1
+$VALUES
+V 1
+1
+$END
+$ENDTIME 800000
+$WAVES +0
+=7 D 700k 1
+$VALUES
+V 1
+0
+$END
+$ENDTIME 900000
+$WAVES +0
+=8 D 800k 1
+$VALUES
+V 1
+1
+$END
+$ENDWAVE

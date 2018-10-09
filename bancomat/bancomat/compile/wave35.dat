@@ -1,0 +1,36 @@
+$WAVE4TIMED
+$RESOLUTION 1000
+I 1 "e#3#bitc2 01"
+$IN 1 1 start_b
+$IN 5 1 7 0 _PIN
+I 2 "a#28#std_logic_vector(3 downto 0)1 ricd3 0 e#9#std_logicc9 UX01ZWLH-"
+I 3 "e#9#std_logicc9 UX01ZWLH-"
+$BUS IN 25 2 4 sw_b
+$SC 9-21/4
+$IN +5 3 clk_b
+$IN +4 3 clk_placa
+I 4 "a#22#BIT_VECTOR(1 downto 0)1 ricd1 0 e#3#bitc2 01"
+$BUS IN 42 4 2 sel_b
+$SC 34 +4
+$BUS IN 51 4 2 sel_opt
+$SC 43 +4
+$OUT +5 1 "citiire_card/terminare_card"
+I 5 "a#29#std_logic_vector(15 downto 0)1 ricd15 0 e#9#std_logicc9 UX01ZWLH-"
+$BUS OUT +68 5 16 13 0 nr_cont
+$SC 56-+60/4
+$BUS IN +5 5 16 "check_card/cont_b"
+$SC 56-+60/4
+$BUS OUT +70 5 16 "cit_pin/PIN"
+$SC 122-+60/4
+$OUT +5 1 8 3 terminare_
+$OUT +4 1 0 7 "demux_optiuni/schimb"
+$BUS IN +4 4 2 15 0 el_opt
+$SC 43 +4
+$OUT 196 1 14 0 depunere_numerar
+$IN +4 1 14 0 enable
+$OUT +4 1 14 0 interogare_sold
+$OUT +4 1 14 0 retragere_numerar
+$BUS S +68 5 16 "check_card/cont_bancar"
+$SC 212-+60/4
+$S +5 1 11 0 terminare
+$ENDWAVE

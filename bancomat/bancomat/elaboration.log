@@ -1,0 +1,53 @@
+elbread.dll ver. 1.0.5.365 Fri May 26 18:24:04 2017
+
+
+---------------------------------------------------------------
+Entity                  | Architecture               | Library
+---------------------------------------------------------------
+bancomat                | arh_bancomat               | bancomat
+citire                  | cit                        | bancomat
+divizor_frecventa       | clock_divider              | bancomat
+verificare_card         | verif_card                 | bancomat
+registru3               | arhregistru3               | bancomat
+registru1               | arhregistru1               | bancomat
+poarta_si_f             | and_gate_f                 | bancomat
+citire_pin              | cit_pin                    | bancomat
+poarta_sau              | or_gate                    | bancomat
+inversor                | inv_gate                   | bancomat
+poarta_si               | and_gate                   | bancomat
+e7seg                   | arh                        | bancomat
+dmux_opt                | arh_dmux_optiuni           | bancomat
+comp_cit_verif          | arh_comp_cit_verif         | bancomat
+magazie                 | magazie_arh                | bancomat
+citire_pin_modificat    | arh_cit_mod                | bancomat
+memorie_ram_conturi     | arh_ram_sume               | bancomat
+interogare_sold         | arh_interogare_sold        | bancomat
+dmuxcit                 | dmux                       | bancomat
+registru                | arhregistru                | bancomat
+bistabil_d              | flip_flop_d                | bancomat
+numaratoradr            | arh                        | bancomat
+rom                     | memorie_rom                | bancomat
+comparator              | comparator_arh             | bancomat
+verificare_pin          | verif_pin                  | bancomat
+memorie_ram             | arh_ram                    | bancomat
+decodificator_7seg      | arh_decd_7seg              | bancomat
+citire_suma_ret_dep     | arh_citire_suma_ret_dep    | bancomat
+conversie_suma_ret_dep  | arh_conversie_suma_ret_dep | bancomat
+verificare_suma         | arh_verificare_suma        | bancomat
+mux                     | arh_mux                    | bancomat
+comparator_bancnote     | comparator_arh             | bancomat
+memorie_ram_bancnote    | arh_ram_bancnote           | bancomat
+memorie_ram_bancnote2   | arh_ram_bancnote2          | bancomat
+scadere                 | scadere_arh                | bancomat
+numarator_bancnote      | arh_numarator_bancnote     | bancomat
+---------------------------------------------------------------
+
+-----------------------------
+Package             | Library
+-----------------------------
+standard            | std
+std_logic_1164      | ieee
+numeric_std         | ieee
+std_logic_arith     | ieee
+std_logic_unsigned  | ieee
+-----------------------------

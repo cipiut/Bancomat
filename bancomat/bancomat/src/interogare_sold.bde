@@ -1,0 +1,527 @@
+SCHM0102
+
+HEADER
+{
+ FREEID 63
+ VARIABLES
+ {
+  #ARCHITECTURE="arh_interogare_sold"
+  #BLOCKTABLE_FILE="#HDL2DIAGRAM.bde"
+  #ENTITY="interogare_sold"
+  #LANGUAGE="VHDL"
+  AUTHOR="Cata"
+  COMPANY="asd"
+  CREATIONDATE="15-May-17"
+  SOURCE="C:\\Users\\Catalin\\Desktop\\bancomat_PSN\\bancomat_PSN\\bancomat\\bancomat\\src\\interogare_sold .vhd"
+ }
+}
+
+PAGE ""
+{
+ PAGEHEADER
+ {
+  PAGESIZE (1532,2877)
+  MARGINS (200,200,200,200)
+  RECT (0,0,0,0)
+ }
+ 
+ BODY
+ {
+  VHDLDESIGNUNITHDR  1, 0, 0
+  {
+   LABEL "Design Unit Header"
+   TEXT 
+"library ieee ;\n"+
+"use ieee.std_logic_1164.all;\n"+
+"use ieee.std_logic_unsigned.all;\n"+
+"use ieee.std_logic_arith.all;"
+   RECT (220,260,674,505)
+   MARGINS (20,20)
+   MULTILINE
+   SYNTAXCOLORED
+   SHOWLABEL
+   SHOWTEXT
+   CORNER 10
+  }
+  SIGNALASSIGN  2, 0, 0
+  {
+   LABEL "Statement_1"
+   TEXT "s_suma_cont_in_4<=conv_integer(Suma_cont);\t\t\t"
+   RECT (220,578,720,651)
+   MARGINS (20,20)
+   MULTILINE
+   SYNTAXCOLORED
+   SHOWLABEL
+   SHOWTEXT
+   CORNER 10
+  }
+  SIGNALASSIGN  3, 0, 0
+  {
+   LABEL "Statement_2"
+   TEXT "s_suma_cont_unitati<=(s_suma_cont_in_4) mod (10);\t\t\t"
+   RECT (220,724,720,797)
+   MARGINS (20,20)
+   MULTILINE
+   SYNTAXCOLORED
+   SHOWLABEL
+   SHOWTEXT
+   CORNER 10
+  }
+  SIGNALASSIGN  4, 0, 0
+  {
+   LABEL "Statement_3"
+   TEXT "Suma_afisare(3 downto 0)<=conv_std_logic_vector(s_suma_cont_unitati,4);\t\t\t"
+   RECT (220,870,720,943)
+   MARGINS (20,20)
+   MULTILINE
+   SYNTAXCOLORED
+   SHOWLABEL
+   SHOWTEXT
+   CORNER 10
+  }
+  SIGNALASSIGN  5, 0, 0
+  {
+   LABEL "Statement_4"
+   TEXT "s_suma_cont_in_3<=s_suma_cont_in_4 / 10;\t\t\t"
+   RECT (220,1016,720,1089)
+   MARGINS (20,20)
+   MULTILINE
+   SYNTAXCOLORED
+   SHOWLABEL
+   SHOWTEXT
+   CORNER 10
+  }
+  SIGNALASSIGN  6, 0, 0
+  {
+   LABEL "Statement_5"
+   TEXT "s_suma_cont_zeci<=s_suma_cont_in_3 mod 10;\t\t\t"
+   RECT (220,1162,720,1235)
+   MARGINS (20,20)
+   MULTILINE
+   SYNTAXCOLORED
+   SHOWLABEL
+   SHOWTEXT
+   CORNER 10
+  }
+  SIGNALASSIGN  7, 0, 0
+  {
+   LABEL "Statement_6"
+   TEXT "Suma_afisare(7 downto 4)<=conv_std_logic_vector(s_suma_cont_zeci,4);\t\t\t"
+   RECT (220,1308,720,1381)
+   MARGINS (20,20)
+   MULTILINE
+   SYNTAXCOLORED
+   SHOWLABEL
+   SHOWTEXT
+   CORNER 10
+  }
+  SIGNALASSIGN  8, 0, 0
+  {
+   LABEL "Statement_7"
+   TEXT "s_suma_cont_in_2<=s_suma_cont_in_3 / 10;\t\t\t"
+   RECT (220,1454,720,1527)
+   MARGINS (20,20)
+   MULTILINE
+   SYNTAXCOLORED
+   SHOWLABEL
+   SHOWTEXT
+   CORNER 10
+  }
+  SIGNALASSIGN  9, 0, 0
+  {
+   LABEL "Statement_8"
+   TEXT "s_suma_cont_sute<=s_suma_cont_in_2 mod 10;\t\t\t"
+   RECT (220,1600,720,1673)
+   MARGINS (20,20)
+   MULTILINE
+   SYNTAXCOLORED
+   SHOWLABEL
+   SHOWTEXT
+   CORNER 10
+  }
+  SIGNALASSIGN  10, 0, 0
+  {
+   LABEL "Statement_9"
+   TEXT "Suma_afisare(11 downto 8)<=conv_std_logic_vector(s_suma_cont_sute,4);\t\t\t"
+   RECT (220,1746,720,1819)
+   MARGINS (20,20)
+   MULTILINE
+   SYNTAXCOLORED
+   SHOWLABEL
+   SHOWTEXT
+   CORNER 10
+  }
+  SIGNALASSIGN  11, 0, 0
+  {
+   LABEL "Statement_10"
+   TEXT "s_suma_cont_in_1<=s_suma_cont_in_2 / 10;\t\t\t"
+   RECT (220,1892,720,1965)
+   MARGINS (20,20)
+   MULTILINE
+   SYNTAXCOLORED
+   SHOWLABEL
+   SHOWTEXT
+   CORNER 10
+  }
+  SIGNALASSIGN  12, 0, 0
+  {
+   LABEL "Statement_11"
+   TEXT "s_suma_cont_mii<=s_suma_cont_in_1 mod 10;\t\t\t"
+   RECT (220,2038,720,2111)
+   MARGINS (20,20)
+   MULTILINE
+   SYNTAXCOLORED
+   SHOWLABEL
+   SHOWTEXT
+   CORNER 10
+  }
+  SIGNALASSIGN  13, 0, 0
+  {
+   LABEL "Statement_12"
+   TEXT "Suma_afisare(15 downto 12)<=conv_std_logic_vector(s_suma_cont_mii,4);\t\t\t"
+   RECT (220,2184,720,2257)
+   MARGINS (20,20)
+   MULTILINE
+   SYNTAXCOLORED
+   SHOWLABEL
+   SHOWTEXT
+   CORNER 10
+  }
+  INSTANCE  14, 0, 0
+  {
+   VARIABLES
+   {
+    #COMPONENT="BusOutput"
+    #LIBRARY="#terminals"
+    #REFERENCE="Suma_afisare(15:0)"
+    #SYMBOL="BusOutput"
+    #VHDL_TYPE="std_logic_vector"
+   }
+   COORD (1060,240)
+  }
+  INSTANCE  15, 0, 0
+  {
+   VARIABLES
+   {
+    #COMPONENT="BusInput"
+    #LIBRARY="#terminals"
+    #REFERENCE="Suma_cont(13:0)"
+    #SYMBOL="BusInput"
+    #VHDL_TYPE="std_logic_vector"
+   }
+   COORD (1060,300)
+  }
+  TEXT  16, 0, 0
+  {
+   TEXT "$#REFERENCE"
+   RECT (1112,240,1112,240)
+   ALIGN 4
+   PARENT 14
+  }
+  TEXT  17, 0, 0
+  {
+   TEXT "$#REFERENCE"
+   RECT (1008,300,1008,300)
+   ALIGN 6
+   PARENT 15
+  }
+  NET BUS  18, 0, 0
+  {
+   VARIABLES
+   {
+    #NAME="s_suma_afisare(13:0)"
+    #VHDL_TYPE="std_logic_vector"
+   }
+  }
+  NET WIRE  19, 0, 0
+  {
+   VARIABLES
+   {
+    #INITIAL_VALUE="0"
+    #NAME="s_suma_cont_in_1"
+    #VHDL_TYPE="integer"
+   }
+  }
+  NET WIRE  20, 0, 0
+  {
+   VARIABLES
+   {
+    #INITIAL_VALUE="0"
+    #NAME="s_suma_cont_in_2"
+    #VHDL_TYPE="integer"
+   }
+  }
+  NET WIRE  21, 0, 0
+  {
+   VARIABLES
+   {
+    #INITIAL_VALUE="0"
+    #NAME="s_suma_cont_in_3"
+    #VHDL_TYPE="integer"
+   }
+  }
+  NET WIRE  22, 0, 0
+  {
+   VARIABLES
+   {
+    #INITIAL_VALUE="0"
+    #NAME="s_suma_cont_in_4"
+    #VHDL_TYPE="integer"
+   }
+  }
+  NET WIRE  23, 0, 0
+  {
+   VARIABLES
+   {
+    #INITIAL_VALUE="0"
+    #NAME="s_suma_cont_mii"
+    #VHDL_TYPE="integer"
+   }
+  }
+  NET WIRE  24, 0, 0
+  {
+   VARIABLES
+   {
+    #INITIAL_VALUE="0"
+    #NAME="s_suma_cont_sute"
+    #VHDL_TYPE="integer"
+   }
+  }
+  NET WIRE  25, 0, 0
+  {
+   VARIABLES
+   {
+    #INITIAL_VALUE="0"
+    #NAME="s_suma_cont_unitati"
+    #VHDL_TYPE="integer"
+   }
+  }
+  NET WIRE  26, 0, 0
+  {
+   VARIABLES
+   {
+    #INITIAL_VALUE="0"
+    #NAME="s_suma_cont_zeci"
+    #VHDL_TYPE="integer"
+   }
+  }
+  VTX  27, 0, 0
+  {
+   COORD (1181,220)
+  }
+  VTX  28, 0, 0
+  {
+   COORD (1281,220)
+  }
+  BUS  29, 0, 0
+  {
+   NET 18
+   VTX 27, 28
+   VARIABLES
+   {
+    #NAMED="1"
+   }
+  }
+  TEXT  30, 0, 1
+  {
+   TEXT "$#NAME"
+   RECT (1231,220,1231,220)
+   ALIGN 9
+   PARENT 29
+  }
+  VTX  31, 0, 0
+  {
+   COORD (1181,260)
+  }
+  VTX  32, 0, 0
+  {
+   COORD (1281,260)
+  }
+  WIRE  33, 0, 0
+  {
+   NET 19
+   VTX 31, 32
+   VARIABLES
+   {
+    #NAMED="1"
+   }
+  }
+  TEXT  34, 0, 1
+  {
+   TEXT "$#NAME"
+   RECT (1231,260,1231,260)
+   ALIGN 9
+   PARENT 33
+  }
+  VTX  35, 0, 0
+  {
+   COORD (1181,300)
+  }
+  VTX  36, 0, 0
+  {
+   COORD (1281,300)
+  }
+  WIRE  37, 0, 0
+  {
+   NET 20
+   VTX 35, 36
+   VARIABLES
+   {
+    #NAMED="1"
+   }
+  }
+  TEXT  38, 0, 1
+  {
+   TEXT "$#NAME"
+   RECT (1231,300,1231,300)
+   ALIGN 9
+   PARENT 37
+  }
+  VTX  39, 0, 0
+  {
+   COORD (1181,340)
+  }
+  VTX  40, 0, 0
+  {
+   COORD (1281,340)
+  }
+  WIRE  41, 0, 0
+  {
+   NET 21
+   VTX 39, 40
+   VARIABLES
+   {
+    #NAMED="1"
+   }
+  }
+  TEXT  42, 0, 1
+  {
+   TEXT "$#NAME"
+   RECT (1231,340,1231,340)
+   ALIGN 9
+   PARENT 41
+  }
+  VTX  43, 0, 0
+  {
+   COORD (1181,380)
+  }
+  VTX  44, 0, 0
+  {
+   COORD (1281,380)
+  }
+  WIRE  45, 0, 0
+  {
+   NET 22
+   VTX 43, 44
+   VARIABLES
+   {
+    #NAMED="1"
+   }
+  }
+  TEXT  46, 0, 1
+  {
+   TEXT "$#NAME"
+   RECT (1231,380,1231,380)
+   ALIGN 9
+   PARENT 45
+  }
+  VTX  47, 0, 0
+  {
+   COORD (1181,420)
+  }
+  VTX  48, 0, 0
+  {
+   COORD (1281,420)
+  }
+  WIRE  49, 0, 0
+  {
+   NET 23
+   VTX 47, 48
+   VARIABLES
+   {
+    #NAMED="1"
+   }
+  }
+  TEXT  50, 0, 1
+  {
+   TEXT "$#NAME"
+   RECT (1231,420,1231,420)
+   ALIGN 9
+   PARENT 49
+  }
+  VTX  51, 0, 0
+  {
+   COORD (1181,460)
+  }
+  VTX  52, 0, 0
+  {
+   COORD (1281,460)
+  }
+  WIRE  53, 0, 0
+  {
+   NET 24
+   VTX 51, 52
+   VARIABLES
+   {
+    #NAMED="1"
+   }
+  }
+  TEXT  54, 0, 1
+  {
+   TEXT "$#NAME"
+   RECT (1231,460,1231,460)
+   ALIGN 9
+   PARENT 53
+  }
+  VTX  55, 0, 0
+  {
+   COORD (1181,500)
+  }
+  VTX  56, 0, 0
+  {
+   COORD (1281,500)
+  }
+  WIRE  57, 0, 0
+  {
+   NET 25
+   VTX 55, 56
+   VARIABLES
+   {
+    #NAMED="1"
+   }
+  }
+  TEXT  58, 0, 1
+  {
+   TEXT "$#NAME"
+   RECT (1231,500,1231,500)
+   ALIGN 9
+   PARENT 57
+  }
+  VTX  59, 0, 0
+  {
+   COORD (1181,540)
+  }
+  VTX  60, 0, 0
+  {
+   COORD (1281,540)
+  }
+  WIRE  61, 0, 0
+  {
+   NET 26
+   VTX 59, 60
+   VARIABLES
+   {
+    #NAMED="1"
+   }
+  }
+  TEXT  62, 0, 1
+  {
+   TEXT "$#NAME"
+   RECT (1231,540,1231,540)
+   ALIGN 9
+   PARENT 61
+  }
+ }
+ 
+}
+
